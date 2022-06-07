@@ -58,10 +58,6 @@ Antes de todo, muestra de la aplicacion y puerto en concreto.
 
 ![](Images/Screenshot_10.png)
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 9076163 (doc: ultimos cambios)
 Si todo lo hemos puesto bien, no nos debería fallar.
 
 Nos situamos en el mismo directorio y usamos 
