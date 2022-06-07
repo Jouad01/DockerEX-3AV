@@ -103,7 +103,9 @@ Diferente forma de dockerizar una aplicación, esta vez web, que no se limita en
 El uso de una aplicación de esta envergadura no facilita la tarea, diferentes versiones de tomcat y base de datos hace que haya que andarse con ojo.
 Pero en este caso (si está bien) ha sido disfrutable una vez que se le pilla el gancho, de esta forma animarse a dockerizar nuestras futuras aplicaciones será algo apetecible. 
 
-Algo como pendiente es que tenga una comunicación eficaz con la base de datos.
+### Problemas
+
+Algo como pendiente es que tenga una comunicación eficaz con la base de datos, en este caso, phpmyadmin
 
 
 **[⬆ back to top](#tabla-de-contenidos)**
