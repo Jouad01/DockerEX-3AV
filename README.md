@@ -28,6 +28,8 @@ La herramienta Docker Compose, nos permitirá definir y ejecutar múltiples apli
 
 Con Compose utilizaremos ficheros en formato YAML, que nos servirán para definir la configuración de la aplicación en cuestión. De esta manera podemos, con un solo comando, crear e iniciar los servicios configurados en estos ficheros.
 
+**[⬆ back to top](#tabla-de-contenidos)**
+
 ---
 
 ## Configuración del archivo
@@ -46,19 +48,29 @@ El .war incluido en el repositorio una evz lo importamos.
 
 ![](Images/Screenshot_4.png)
 
+**[⬆ back to top](#tabla-de-contenidos)**
+
 ---
 
 ## Despliegue de la aplicacion
 
 Si todo lo hemos puesto bien, no nos debería fallar.
 
-Nos situamos en el mismo directorio y usamos *docker-compose up -d*
+Nos situamos en el mismo directorio y usamos 
+
+```docker-compose up -d```
 
 ![](Images/Screenshot_5.png)
 
 Vemos nuestras imagenes.
 
 ![](Images/Screenshot_6.png)
+
+**[⬆ back to top](#tabla-de-contenidos)**
+
+---
+
+## Imagen a dockerhub
 
 Creamos el tag que subiremos al dockerhub.
 
@@ -68,7 +80,38 @@ Hacemos login con una cuenta ya creada donde nos pedirá nombre y contraseña y,
 
 ![](Images/Screenshot_9.png)
 
+Finalmente podemos ver los push realizados, en este caso el último, que es **exsistemas**
 
-![](Images/Screenshot_10.png)
+![](Images/Screenshot_8.png)
 
 
+### Enlace
+
+*Dockerhub:* **https://hub.docker.com/u/jouad01**
+
+**[⬆ back to top](#tabla-de-contenidos)**
+
+---
+
+## Conclusiones
+
+Diferente forma de dockerizar una aplicación, esta vez web, que no se limita en un dockerfile.
+El uso de una aplicación de esta envergadura no facilita la tarea, diferentes versiones de tomcat y base de datos hace que haya que andarse con ojo.
+Pero en este caso (si está bien) ha sido disfrutable una vez que se le pilla el gancho, de esta forma animarse a dockerizar nuestras futuras aplicaciones será algo apetecible. 
+
+Algo como pendiente es que tenga una comunicación eficaz con la base de datos.
+
+
+**[⬆ back to top](#tabla-de-contenidos)**
+
+---
+
+## Annexos
+
+- https://colaboratorio.net/davidochobits/sysadmin/2018/despliegue-de-aplicaciones-con-docker-compose/
+
+- https://devops4solutions.com/deploy-a-tomcat-application-using-docker-compose/
+
+- https://github.com/maximofernandezriera/loginwebapp-docker-compose
+
+**[⬆ back to top](#tabla-de-contenidos)**
