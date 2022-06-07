@@ -1,36 +1,36 @@
 version: '3.3'
 services:
-  db:
+  db1:
     image: mysql:8.0
     volumes:
       - ./test:/var/lib/mysql
-      - ./BD:/docker-entrypoint-initdb.d
+      - ./BD:/docker-entrypoint-initdb1.d
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: PiZhop
       MYSQL_USER: jouad
       MYSQL_PASSWORD: 1234
     ports:
-      - 3307:3306
+      - 3309:3310
   phpmyadmin:
     depends_on:
-      - db
+      - db1
     image: phpmyadmin/phpmyadmin
     ports:
-      - '8081:80'
+      - '8072:70'
     environment:
-      PMA_HOST: db
+      PMA_HOST: db1
       MYSQL_ROOT_PASSWORD: root
   web:
     build:
       context: .
     depends_on:
-      - db
+      - db1
     image: tomcat:9.0
     volumes:
       -  ./ProyectoGlobal-PiZhop.war:/usr/local/tomcat/webapps/ProyectoGlobal-PiZhop.war
     ports:
-      - '8080:8080'
+      - '8070:8071'
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: PiZhop
