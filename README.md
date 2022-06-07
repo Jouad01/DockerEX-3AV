@@ -54,6 +54,11 @@ El .war incluido en el repositorio una evz lo importamos.
 
 ## Despliegue de la aplicacion
 
+Antes de todo, muestra de la aplicacion y puerto en concreto.
+
+![](Images/Screenshot_10.png)
+
+
 Si todo lo hemos puesto bien, no nos debería fallar.
 
 Nos situamos en el mismo directorio y usamos 
